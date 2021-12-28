@@ -110,7 +110,15 @@ li {
     }
   }
 
-  
+  @media only screen and (max-width: 760px) {
+    .projects-container {
+        display: none;
+    }
+    .item-container {
+        margin-bottom: unset;
+    }
+  }
+
 @media only screen and (max-width: 585px) {
     .projects-container {
         flex-wrap: wrap;
