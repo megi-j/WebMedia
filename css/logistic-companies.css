@@ -1,0 +1,153 @@
+body {
+    background: #F7F7F8;
+    padding-top: 50px !important;
+}
+
+section {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.header-title span {
+    color: #696977;
+}
+
+.item-image {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+li {
+    background-color: white;
+    padding: 20px 0px 20px 20px !important;
+    margin-bottom: 20px !important;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.item-image-description {
+    display: flex;
+    align-items: center;
+}
+
+.item-description {
+    margin-left: 20px;
+}
+
+.item-image-description h4 {
+    margin-bottom: 8px;
+}
+
+.item-image-description p {
+    color: #696977;
+    margin-bottom: 10px;
+}
+
+.item-image-description a {
+    color: #324BFF;
+    text-decoration: none;
+}
+
+.item-image-description a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.project-item {
+    display: flex;
+    border: 1px solid rgb(128,128,128, 0.4);
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.project-image {
+    width: 115px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 4px 0 0px 4px;
+}
+
+.project-title {
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.project-title h5 {
+    margin-bottom: 5px;
+}
+
+.project-title p {
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    li {
+        padding: 20px 0px 20px 0px !important
+    }
+  }
+
+
+@media only screen and (max-width: 1024px) {
+    li {
+        flex-wrap: wrap;
+    }
+    .item-container {
+        margin-bottom: 20px;
+    }
+  }
+
+  
+@media only screen and (max-width: 585px) {
+    .projects-container {
+        flex-wrap: wrap;
+    }
+    .projects-container {
+        max-width: 313px;
+        min-width: 278px;
+    }
+    .first-item {
+        margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 280px) {
+      .item-image-description {
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .item-description {
+          margin-left: unset;
+      }
+      .projects-container {
+          min-width: unset;
+          max-width: unset;
+      }
+    .project-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: unset;
+    }
+  }
+
+  @media only screen and (max-width: 280px) {
+      .project-image {
+          margin-right: unset;
+      }
+      .project-title {
+          margin-right: unset;
+      }
+  }
